@@ -104,6 +104,27 @@ main {
   width: 100%;
 }
 
+.breadcrumb ul {
+  display: flex;
+  list-style-type: "> ";
+  gap: 24px;
+}
+
+.breadcrumb ul a:nth-of-type(1) li {
+  list-style: none;
+}
+
+.breadcrumb ul li {
+  color: #5a6063;
+  font-size: 14px;
+  text-transform: UPPERCASE;
+  letter-spacing: 1.4px;
+}
+
+.breadcrumb ul a:nth-last-of-type(1) li {
+  color: #2d3336;
+}
+
 footer {
   padding-top: 104px;
   border-top: thin solid #e4e4e733;
@@ -191,8 +212,12 @@ footer .newsletter-input-container button {
     display: block;
   }
   main {
-  gap: 24px;
-}
+    gap: 24px;
+  }
+
+  .breadcrumb {
+    display: none;
+  }
   /* FOOTER */
   footer .container {
     display: flex;
