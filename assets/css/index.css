@@ -1,0 +1,222 @@
+/* HERO SECTION */
+.hero {
+  padding-top: 128px;
+  padding-bottom: 96px;
+  gap: 80px;
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+.hero div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.hero div {
+  width: 50%;
+}
+
+.hero .curated-collection {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.hero .heading-text {
+  font-size: 60px;
+  font-weight: 900;
+  line-height: 54px;
+  letter-spacing: -3px;
+  color: #2d3336;
+}
+
+.hero div:nth-of-type(2) {
+  display: flex;
+  align-items: baseline;
+  justify-content: end;
+  height: 100%;
+}
+
+.hero div:nth-of-type(2) p {
+  width: 80%;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: var(--color-text);
+}
+
+.marquee {
+  background: #f2f4f5;
+  padding: 16px 0;
+  border-radius: 8px;
+  display: flex;
+}
+
+.marquee div {
+  display: flex;
+  gap: 48px;
+  font-size: 12px;
+  font-weight: 400px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+  color: var(--color-text);
+}
+.product-section {
+  margin-top: 112px;
+}
+.products-container {
+  display: flex;
+  gap: 76px;
+}
+
+.products-container .product {
+  max-height: 700px;
+  height: 700px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+}
+.products-container .product img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  object-position: center;
+  object-fit: cover;
+}
+.products-container .product .product-details {
+  position: relative;
+  padding: 28.85px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.products-container .product .product-details .product-content .product-tag {
+  padding: 3.5px 11px;
+  background-color: #dde3e7cc;
+  border-radius: 11px;
+  text-align: center;
+  font-size: 9px;
+  color: #ffffff;
+}
+.products-container .product .product-details .product-content .product-title {
+  font-weight: 700px;
+  font-size: 28px;
+  line-height: 32.5px;
+  color: #ffffff;
+  margin-top: 32px;
+}
+.products-container
+  .product
+  .product-details
+  .product-content
+  .product-feature {
+  font-size: 12.8px;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.products-container .product .product-details .product-order-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.products-container .product .product-details .product-order-button a {
+  padding: 11px 22px;
+  border-radius: 11px;
+  background-color: #e8e8e8b2;
+  border: none;
+  font-weight: 600;
+  font-size: 12.7px;
+  color: #2d3336;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .hero div:nth-of-type(2) p {
+    width: 100%;
+  }
+  .hero .heading-text {
+    font-size: 50px;
+  }
+  .products-container .product {
+    height: 550px;
+    max-height: 550px;
+  }
+  .products-container .product .product-details {
+    padding: 20px;
+  }
+  .products-container .product .product-details .product-order-button button {
+    padding: 8px 16px;
+    font-size: 10px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+  .hero div {
+    width: 100%;
+  }
+  .products-container {
+    flex-direction: column;
+    gap: 42px;
+  }
+  .product-section {
+    margin-top: 82px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  .hero div:nth-of-type(2) p {
+    width: 100%;
+    font-size: 16px;
+    line-height: initial;
+  }
+  .hero .heading-text {
+    font-size: 32px;
+    letter-spacing: initial;
+    line-height: initial;
+  }
+  .hero .curated-collection {
+    font-size: 10px;
+  }
+  .marquee {
+    padding: 4px 0;
+  }
+  .marquee div {
+    font-size: 8.58px;
+  }
+  .products-container {
+    gap: 21px;
+  }
+  .product-section {
+    margin-top: 41px;
+    padding: 0;
+  }
+  .products-container .product {
+    height: 500px;
+    max-height: 500px;
+    background: linear-gradient(to top, black, transparent) !important;
+    border-radius: 8px;
+  }
+  .products-container .product img {
+    background: red;
+  }
+}
